@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Modern Business - Start Bootstrap Template</title>
+  <title>Portfolio - Jacob Taylor</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,10 +30,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="index.html">About</a>          
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="portfolio.html">Portfolio</a>          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -43,34 +46,39 @@
   <!-- Page Content -->
   <div class="container">
 
-    <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Portfolio Item
-      <small>Subheading</small>
+    <!-- Page Heading -->
+    <h1 class="mt-4 mb-3">Portfolio
     </h1>
-
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="index.html">Home</a>
-      </li>
-      <li class="breadcrumb-item active">Portfolio Item</li>
-    </ol>
 
     <!-- Portfolio Item Row -->
     <div class="row">
 
-      <div class="col-md-8">
-        <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+      <div class="col-md-7">
+        <img class="img-fluid" src="img/OrbitalGameplay.gif" alt="Orbital">
       </div>
 
-      <div class="col-md-4">
-        <h3 class="my-3">Project Description</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-        <h3 class="my-3">Project Details</h3>
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3 class="my-3">Orbital</h3>
+          </div>
+          <div class="col-sm-6 text-right">
+            <a href="https://blastinghavoc.github.io/OrbitalGame/" class="btn btn-primary my-3">Play Demo!</a>
+          </div>
+        </div>
+        <p>Orbital is an Arcade Shooter / Tower Defence hybrid, in which you must defend your planet from incoming hordes of aliens.</p>
+
+        <p>Orbital was designed for one of my university courses, following a brief to make a demo for a free casual game. 
+        After spending some time creating a design document, the initial demo was created in 7 days and received a great response.</p>
+
+        <p>Development continues, and Orbital will be available to the public some time this year!</p>       
+        <h3 class="my-3">Key Features</h3>
         <ul>
-          <li>Lorem Ipsum</li>
-          <li>Dolor Sit Amet</li>
-          <li>Consectetur</li>
-          <li>Adipiscing Elit</li>
+          <li>Sprite animation</li>
+          <li>Enemy class hierarchy</li>
+          <li>Predictive aiming</li>
+          <li>Full object pooling</li>
+          <li>Detailed upgrade system</li>
         </ul>
       </div>
 
@@ -78,15 +86,8 @@
     <!-- /.row -->
 
     <!-- Related Projects Row -->
-    <h3 class="my-4">Related Projects</h3>
-
-    <div class="row">
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </a>
-      </div>
+    <!-- <h3 class="my-4">Related Projects</h3> -->
+    <!-- <div class="row">
 
       <div class="col-md-3 col-sm-6 mb-4">
         <a href="#">
@@ -106,7 +107,13 @@
         </a>
       </div>
 
-    </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        </a>
+      </div>
+
+    </div> -->
     <!-- /.row -->
 
   </div>
