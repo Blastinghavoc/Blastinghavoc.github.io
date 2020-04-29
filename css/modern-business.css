@@ -28,6 +28,12 @@ body {
   width: 100%;
 }
 
+.portfolio-carousel-control
+{
+  height: 20%;
+  top: 40%;
+}
+
 .myFooter{
   position: absolute;
   right: 0;
