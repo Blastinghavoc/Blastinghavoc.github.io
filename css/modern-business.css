@@ -28,6 +28,11 @@ body {
   width: 100%;
 }
 
+.portfolio-wide-image-row
+{
+  margin-bottom: 20px;
+}
+
 .portfolio-carousel-control
 {
   height: 20%;
