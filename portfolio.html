@@ -63,17 +63,24 @@
             <h3 class="my-3">Voxel Terrain Engine</h3>
           </div>
 
-          <div class="col-sm-6 text-right">
+          <!-- <div class="col-sm-6 text-right">
             <a href="https://www.youtube.com/watch?v=HkmrXZ2zpFY" class="btn btn-primary my-3">Watch Demo on Youtube</a>
-          </div>
+          </div> -->
 
         </div>
 
         <div class="row portfolio-wide-image-row">
           <div class="col-md-12">
-            <div id="MycroftCarouselIndicators" class="carousel slide" data-ride="carousel">
+            <div id="MycroftCarouselIndicators" class="carousel slide" data-interval="false">
               <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active text-center bg-secondary" style="background-image: url(img/Mycroft/WorldgenGrass.png);"></div>
+
+                <div class="carousel-item active text-center bg-secondary">
+                  <iframe width="80%" height="100%"
+                  src="https://www.youtube.com/embed/HkmrXZ2zpFY?autoplay=1&mute=1">
+                  </iframe>
+                </div>
+
+                <div class="carousel-item text-center bg-secondary" style="background-image: url(img/Mycroft/WorldgenGrass.png);"></div>
                 <div class="carousel-item text-center bg-secondary" style="background-image: url(img/Mycroft/WorldgenDesert.png);"></div>
                 <div class="carousel-item text-center bg-secondary" style="background-image: url(img/Mycroft/WorldgenSnow.png);"></div>
                 <div class="carousel-item text-center bg-secondary" style="background-image: url(img/Mycroft/LightingMidDay.png);"></div>
@@ -243,12 +250,17 @@
             <li data-target="#TDCarouselIndicators" data-slide-to="3"></li>
           </ol>
           <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active text-center bg-secondary" style="background-image: url(img/3DTDWave3.png);">
-            </div>
-            <div class="carousel-item text-center bg-secondary" style="background-image: url(img/3DTDLoading.png);">
+            <div class="carousel-item active text-center bg-secondary">
+              <video width="100%" height="auto" autoplay controls muted loop>
+                <source src="img/3DTD_Gameplay.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+              <div class="carousel-caption d-none d-md-block">
+                <p>Gameplay.</p>
+              </div>
             </div>
             <div class="carousel-item text-center bg-secondary">
-              <video width="100%" height="auto" autoplay controls muted>
+              <video width="100%" height="auto" autoplay controls muted loop>
                 <source src="img/3DTD_PlacingBlocks.mp4" type="video/mp4">
               Your browser does not support the video tag.
               </video>
@@ -256,14 +268,9 @@
                 <p>Placing defenses.</p>
               </div>
             </div>
-            <div class="carousel-item text-center bg-secondary">
-              <video width="100%" height="auto" autoplay controls muted>
-                <source src="img/3DTD_Gameplay.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-              <div class="carousel-caption d-none d-md-block">
-                <p>Gameplay.</p>
-              </div>
+            <div class="carousel-item text-center bg-secondary" style="background-image: url(img/3DTDWave3.png);">
+            </div>
+            <div class="carousel-item text-center bg-secondary" style="background-image: url(img/3DTDLoading.png);">
             </div>
           </div>
           <a class="carousel-control-prev portfolio-carousel-control" href="#TDCarouselIndicators" role="button" data-slide="prev">
@@ -316,12 +323,24 @@
             <li data-target="#ARTCarouselIndicators" data-slide-to="5"></li>
           </ol>
           <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active text-center bg-secondary" style="background-image: url(img/ARTDarkShot.png);">
+            <div class="carousel-item active text-center bg-secondary">
+              <video width="100%" height="auto" autoplay controls muted loop>
+                <source src="img/ARTLightMode.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+              <div class="carousel-caption d-none d-md-block">
+                <p>Gameplay in light mode.</p>
+              </div>
             </div>
-            <div class="carousel-item text-center bg-secondary" style="background-image: url(img/ARTLightView.png);">
-            </div>
-            <div class="carousel-item text-center bg-secondary" style="background-image: url(img/ARTDarkView.png);">
-            </div>
+            <div class="carousel-item text-center bg-secondary">
+              <video width="100%" height="auto" autoplay controls muted loop>
+                <source src="img/ARTDarkMode.mp4" type="video/mp4">                
+              Your browser does not support the video tag.
+              </video>
+              <div class="carousel-caption d-none d-md-block">
+                <p>Gameplay in dark mode.</p>
+              </div>
+            </div>            
             <div class="carousel-item text-center bg-secondary">
               <video width="100%" height="auto" autoplay controls muted>
                 <source src="img/ARTAppearEffect.mp4" type="video/mp4">
@@ -331,24 +350,12 @@
                 <p>Appear effect at the start of the game.</p>
               </div>
             </div>
-            <div class="carousel-item text-center bg-secondary">
-              <video width="100%" height="auto" autoplay controls muted>
-                <source src="img/ARTLightMode.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-              <div class="carousel-caption d-none d-md-block">
-                <p>Gameplay in light mode.</p>
-              </div>
+            <div class="carousel-item text-center bg-secondary" style="background-image: url(img/ARTDarkShot.png);">
             </div>
-            <div class="carousel-item text-center bg-secondary">
-              <video width="100%" height="auto" autoplay controls muted>
-                <source src="img/ARTDarkMode.mp4" type="video/mp4">                
-              Your browser does not support the video tag.
-              </video>
-              <div class="carousel-caption d-none d-md-block">
-                <p>Gameplay in dark mode.</p>
-              </div>
-            </div>            
+            <div class="carousel-item text-center bg-secondary" style="background-image: url(img/ARTLightView.png);">
+            </div>
+            <div class="carousel-item text-center bg-secondary" style="background-image: url(img/ARTDarkView.png);">
+            </div>
             
           </div>
           <a class="carousel-control-prev portfolio-carousel-control" href="#ARTCarouselIndicators" role="button" data-slide="prev">
