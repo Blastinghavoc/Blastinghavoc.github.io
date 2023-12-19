@@ -10,10 +10,14 @@
 
   <title>About - Jacob Taylor</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-  <!-- Custom styles for this template -->
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Custom styles -->
   <link href="css/modern-business.css" rel="stylesheet">
 </head>
 
@@ -45,7 +49,7 @@
     </div>
   </nav>
 
-  <header>
+  <!-- <header>
     <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -68,11 +72,104 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </header>
-
+  </header> -->
+  
   <!-- Page Content -->
-  <div class="container">
+  <main class="container">
+      <div class="position-relative my-4 text-center">
+        <img src="img/Me/MeNeutral.png" class="img-fluid rounded" alt="Picture of me">
+      </div>
+
+      
+      <!-- About section -->
+      <h4 class="display-4 text-center mb-4">About Jacob Taylor</h4>
       <div class="row">
+
+        <!-- Side Bar -->
+        <aside class="col-md-4">
+          
+          <div class="card mb-4">
+            <h4 class="card-header bg-dark text-light">Quick Info</h4>
+            <div class="card-body bg-secondary">
+              <ol class="list-unstyled mb-0 text-light">
+                <li class="mb-1"><b>3+ years c++</b> game-dev at <a href="https://cloudimperiumgames.com/" class="link-light">Cloud Imperium Games</a></li>
+                <li class="mb-1"><b>MSc</b> Computer Games Technology, City University London</li>
+                <li class="mb-1"><b>BSc</b> Computer Science, University of Warwick</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4 class="card-header bg-dark text-light">Contact</h4>
+            <div class="card-body bg-secondary">
+              <ol class="list-unstyled mb-0 text-light">
+                <li><i class="fa fa-linkedin "></i> Linkedin: <a href="https://www.linkedin.com/in/jacob-taylor-3ab064152/" class="link-light">Jacob Taylor</a></li>
+                <li><i class="fa fa-envelope"></i> Email: <a href="mailto:business.jdtaylor@gmail.com" class="link-light">business.jdtaylor@gmail.com</a></li>
+              </ol>
+            </div>
+          </div>
+
+        </aside>
+
+        <!-- About text -->
+        <div class="col-md-8">
+
+          
+          <p class="lead mb-1">Who am I?</p>
+          <p>
+            Hello! I'm Jacob, an experienced gameplay programmer currently working at <a href="https://cloudimperiumgames.com/">Cloud Imperium Games</a>.
+            I'm passionate about delivering fun and high quality gameplay features to my players and efficient internal workflows to my colleagues.
+            At CIG I've had the pleasure of creating features such as Loot Generation and Salvage, maintaining existing features, and building tools for designers 
+            and other developers to use.
+          </p>
+
+          <p>
+            When I'm not making games I'm often playing them, and have been greatly inspired by the works of 
+            <a href="https://factorio.com/team">Wube software</a>,
+            <a href="https://www.coffeestainstudios.com/">Coffee Stain Studios</a>, and 
+            <a href="https://re-logic.com/">Re-logic</a>, who've made some of my favourite games to-date.
+            I'm a huge fan of the social aspect of cooperative and multiplayer games, and love to be part of creating those experiences for players.
+          </p>
+
+          <p>
+            Other than games, I enjoy working out, martial arts, scuba diving and generally experiencing new things.
+            My curiosity has led me to fly planes, gyrocopters, and helicopters, try indoor skydiving, rockclimbing, and surfboarding, 
+            and even blacksmithing my own sword! I'm always looking for more activities and experiences to expand my world view.
+          </p>
+
+          <p class="lead mb-1">How did I get here?</p>
+          <p>
+            I've been interested in technology and games for my whole life, but got hooked on programming during my Computing
+            A-level. The challenge and creative freedom programming presented was like nothing I'd experienced before, and since then I've known 
+            that it's a programmer's life for me! I went on to study a BSc in Computer Science at Warwick University to give me a firm
+            knowledge of the fundamentals, followed by a Software Development internship at Amazon for some real world experience. I then took on
+            an MSc in Computer Games Technology to help me specialize in games, and from there I was on to Cloud Imperium Games to kickstart my career.
+          </p>
+
+          <p class="lead mb-1">What's next?</p>
+          <p>
+            My goal is to become a Lead programmer capable of mentoring teammates, designing complex features, and managing the workload and schedule of the team.
+            To work towards this I learn from talented colleagues through code reviews and discussions, work closely with designers to ensure we strike the best
+            possible balance between creative vision and technical feasibility, and engage with producers to help triage issues, schedule work, and run meetings.
+          </p>
+        
+        </div>
+      </div>
+
+      <!-- Portfolio section -->
+      <h4 class="display-4 text-center my-4">Portfolio</h4>
+      <div class="row">
+        <div class="col-md-4">
+          TODO put pictures and videos here
+        </div>
+
+        <div class="col-md-8">
+          TODO put descriptions here
+        </div>
+      </div>
+
+
+      <!-- <div class="row">
         <div class="col text-center">
           <h1 class="my-4">About Me</h1>
         </div>
@@ -106,21 +203,20 @@
             and I recently blacksmithed my own sword! I'm always looking for more activities and experiences to expand my world view.
           </p>
         </div>
-      </div>
-  </div>
+      </div> -->
+  </main>
   <!-- /.container -->
 
   <!-- Footer -->
   <footer class="py-2 bg-dark myFooter">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Jacob Taylor 2020</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Jacob Taylor 2023 
+        <a href="https://www.linkedin.com/in/jacob-taylor-3ab064152/"><i class="fa fa-linkedin "></i></a> 
+        <a href="mailto:business.jdtaylor@gmail.com"><i class="fa fa-envelope"></i></a>
+      </p>
     </div>
     <!-- /.container -->
   </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
