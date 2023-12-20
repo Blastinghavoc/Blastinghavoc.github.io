@@ -33,46 +33,21 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">About</a>          
+            <a class="nav-link" href="#about">About</a>          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>          
+            <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cv.html">CV</a>
+            <a class="nav-link" href="#cv">CV</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <!-- <header>
-    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselIndicators" data-slide-to="3"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active text-center bg-secondary" style="background-image: url(img/Mycroft/WorldgenGrass.png);"></div>
-        <div class="carousel-item text-center bg-secondary" style="background-image: url(img/OrbitalLateGame2.png);"></div>
-        <div class="carousel-item text-center bg-secondary" style="background-image: url(img/ExplorerWarehouse.png);"></div>
-        <div class="carousel-item text-center bg-secondary" style="background-image: url(img/ARTDarkShot.png);"></div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </header> -->
   
   <!-- Page Content -->
   <main class="container">
@@ -82,10 +57,12 @@
 
       
       <!-- About section -->
+      <a id="about"></a>
       <h4 class="display-4 text-center mb-4">About Jacob Taylor</h4>
       <div class="row">
 
         <!-- Side Bar -->
+        <a id="contact"></a>
         <aside class="col-md-4">
           
           <div class="card mb-4">
@@ -105,6 +82,7 @@
               <ol class="list-unstyled mb-0 text-light">
                 <li><i class="fa fa-linkedin "></i> Linkedin: <a href="https://www.linkedin.com/in/jacob-taylor-3ab064152/" class="link-light">Jacob Taylor</a></li>
                 <li><i class="fa fa-envelope"></i> Email: <a href="mailto:business.jdtaylor@gmail.com" class="link-light">business.jdtaylor@gmail.com</a></li>
+                <li><i class="fa fa-youtube"></i> Youtube: <a href="https://www.youtube.com/@jacobtaylorportfolio3035" class="link-light">Jacob Taylor Portfolio</a></li>
               </ol>
             </div>
           </div>
@@ -113,13 +91,11 @@
 
         <!-- About text -->
         <div class="col-md-8">
-
-          
           <p class="lead mb-1">Who am I?</p>
           <p>
             Hello! I'm Jacob, an experienced gameplay programmer currently working at <a href="https://cloudimperiumgames.com/">Cloud Imperium Games</a>.
             I'm passionate about delivering fun and high quality gameplay features to my players and efficient internal workflows to my colleagues.
-            At CIG I've had the pleasure of creating features such as Loot Generation and Salvage, maintaining existing features, and building tools for designers 
+            At CIG I've had the pleasure of creating new gameplay features, maintaining existing features, and building tools for designers 
             and other developers to use.
           </p>
 
@@ -152,70 +128,196 @@
             To work towards this I learn from talented colleagues through code reviews and discussions, work closely with designers to ensure we strike the best
             possible balance between creative vision and technical feasibility, and engage with producers to help triage issues, schedule work, and run meetings.
           </p>
-        
         </div>
       </div>
 
       <!-- Portfolio section -->
-      <h4 class="display-4 text-center my-4">Portfolio</h4>
+      <a id="portfolio"></a>
+      <h4 class="display-4 text-center my-5">Portfolio</h4>
+
+      <!-- Star Citizen -->
       <div class="row">
         <div class="col-md-4">
-          TODO put pictures and videos here
+        </div>
+        <div class="col-md-8">
+          <h4>Star Citizen</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="ratio ratio-16x9 rounded mt-2" style="overflow: hidden;"> 
+          <iframe
+          src="https://www.youtube.com/embed/videoseries?si=MymZbxR2QPIV70JH&amp;list=PL39O8jWm_f4t-VPrnnBntaoUCBvbTUPwq" title="Playlist of Jacob's appearances in Star Citizen media" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+          </iframe>
+          </div>
         </div>
 
         <div class="col-md-8">
-          TODO put descriptions here
+          <p>
+            For over three years now I've been working on <a href="https://robertsspaceindustries.com/star-citizen">Star Citizen</a>, a massive scale high fidelity sci-fi
+            MMO. My work has been a mix of building new gameplay features such as <a href="https://www.youtube.com/watch?v=Xfb_0d1ZpRc" >Loot Generation</a>, 
+            <a href="https://www.youtube.com/watch?v=DFSvBqSlt9k">Hull Scraping</a> and <a href="https://www.youtube.com/watch?v=ljdiKYfo2ZI">Structural Salvage</a>,
+            and maintaining and expanding upon existing features such as the Room System and Harvestable System.
+          </p>
+          <p>
+            When building new features I've dealt with the challenges of managing dependencies (VFX, SFX, Art), iterative design and the compromises that sometimes brings
+            (something that sounds good on paper isn't always feasible in a multiplayer persistent MMO!), and the scheduling challenges brought by the need to provide support 
+            for existing features and systems while making new ones. Throughout my work I pride myself in putting the needs of my colleagues first: a new feature
+            is always a collaborative effort so it's vital that I provide excellent tools and documentation to allow designers and other dependencies to use my code to its full potential.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/StarCitizen/StructuralSalvageVulture.png" class="img-fluid rounded mt-2" alt="Star Citizen Vulture ship performing Structural Salvage gameplay">
+          <img src="img/StarCitizen/StructuralSalvageVultureOnPlanet.png" class="img-fluid rounded mt-2" alt="Star Citizen Vulture ship performing Structural Salvage gameplay">
+        </div>
+
+        <div class="col-md-8">
+
+          <p class="lead mb-1">Feature spotlight: Structural Salvage</p>
+          <p>
+            The <a href="https://www.youtube.com/watch?v=ljdiKYfo2ZI">Structural Salvage</a> feature encompasses the gameplay of two salvage ships, the Vulture and the Reclaimer, and is how they break apart the wrecks of other ships
+            into smaller pieces and extract a sellable resource from them. I was the singular gameplay programmer responsible for this feature along with three gameplay designers
+            on my team. We had to deliver this feature on a very tight timeline and work closely with almost every dependency team in the company (Vehicle Art, Vehicle Design, 
+            VFX, SFX, Narrative) to ensure that every aspect of it was as good as possible in the given time.
+          </p>
+          <p>
+            My responsibilities on this feature included:
+          </p>
+          <ul>
+            <li>Deriving a technical design for a complex feature to ship on a challenging timeline, including sub-feature prioritization and scope negotiation with Production</li>
+            <li>Programming multiplayer gameplay involving physics object detection and destruction</li>
+            <li>Programming responsive user input with networking to other machines</li>
+            <li>Programming UI, VFX and SFX hooks into the gameplay so that these dependencies can display / trigger their outputs at the correct time and with modulation from gameplay parameters</li>
+            <li>Responding to rapidly evolving requirements from Design and other dependencies</li>
+            <li>Providing a suite of development tools, design parameters and debugging visualizations to facilitate balancing efforts by the designers</li>
+            <li>Ensuring the system was flexible enough to support the use-cases of both vehicles in an efficient and easily configurable manner</li>
+          </ul>
         </div>
       </div>
 
-
-      <!-- <div class="row">
-        <div class="col text-center">
-          <h1 class="my-4">About Me</h1>
+      <!-- Mycroft -->
+      <div class="row mt-5">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-8">
+          <h4>Voxel Framework for Unity (MSc Project)</h4>
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="ratio ratio-16x9 rounded mt-2" style="overflow: hidden;">
+            <iframe src="https://www.youtube.com/embed/HkmrXZ2zpFY" title="Voxel Framework for Unity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          <img src="img/Mycroft/LightingDusk.png" class="img-fluid rounded mt-2" alt="Voxel grass biome">
+          <img src="img/Mycroft/WorldgenSnow.png" class="img-fluid rounded mt-2" alt="Voxel snow biome">
+        </div>
+
+        <div class="col-md-8">
+          <p>
+            My final master's project was the creation of a voxel framework for Unity. From an academic perspective it
+            was designed to compare several voxel algorithms and datastructures (including Greedy Meshing and Octrees),
+            but I also wanted it to be an extensible framework for the development of a Minecraft-like game. The project
+            took place over three months, and gave me great experience developing a large and complex system with Unity.
+          </p>
+          <p>
+            The major focuses of the project were performance and extensibility; the former was achieved through the Unity
+            Job System (and Burst Compiler) for parallelism, and the latter was achieved with careful architectural design
+            and extensive use of Scriptable Objects for data driven configuration. The result is that you can define new 
+            voxel types, biomes, and trees, and change world generation settings all through the Unity editor. The game
+            runs smoothly with lighting and meshing updates in real time as voxels are placed and broken.
+          </p>
+
+          <p class="lead mb-1">Key Features</p>
+          <ul>
+            <li>Procedural terrain based on Simplex noise (including trees, caves and ores)</li>
+            <li>Support for multiple voxel types with distinct textures, including transparency</li>
+            <li>Support for rotatable/orientable voxel types (e.g. logs can be placed vertically or horizontally)</li>
+            <li>Voxel-based lighting baked into the meshes, with separate channels for sunlight and dynamic lights (and customized 
+              shaders to support this)
+            </li>
+            <li>Use of the Unity Job System and Burst Compiler to parallelize and accelerate procedural generation, meshing
+              and light propagation algorithms
+            </li>
+            <li>Configurable voxel types, biomes and trees via Scriptable Objects</li>
+            <li>Basic UI and inventory system with drag-and-drop features</li>
+            <li>Extensive use of unit tests through the Unity Test Framework, and a custom performance testing 
+              implementation for comparing different algorithms and datastructures
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Orbital -->
+      <div class="row mt-5">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-8">
+            <h4>Orbital (Side Project)
+              <a href="https://blastinghavoc.itch.io/orbital" class="btn btn-primary">Play Now!</a>
+            </h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/OrbitalGameplay.gif" class="img-fluid rounded mt-2" alt="Voxel snow biome">
+        </div>
+
+        <div class="col-md-8">
+          <p>
+            Orbital is an Arcade Shooter / Tower Defense hybrid developed in Unity, in which you must defend your planet from incoming hordes of aliens.
+          </p>
+
+          <p>
+            Orbital was designed for one of my master's modules, following a brief to make a demo for a free casual game. 
+            After spending some time creating a design document, the initial demo was created in 7 days.
+          </p>
+
+          <p>
+            I continued to work on it in my spare time, and it has been released as a work-in-progress on <a href="https://blastinghavoc.itch.io/orbital">itch.io</a>.
+          </p>
+          
+          <p class="lead mb-1">Key Features</p>
+          <ul>
+            <li>Spritesheet animation</li>
+            <li>Multiple enemy types with varied behaviors</li>
+            <li>Predictive targeting</li>
+            <li>Full object pooling</li>
+            <li>Detailed upgrade system</li>
+            <li>Self-made sprites</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CV section -->
+      <a id="cv"></a>
+      <h4 class="display-4 text-center mt-5">CV</h4>
       <div class="row d-flex justify-content-center">
-        <div class="col-lg-8">
-          <p>Hello! I'm Jacob, an aspiring game developer who recently finished a Masters in Computer Games Technology at City, University of London.
-            On this website you can see some of my <a href="portfolio.html">projects</a>, and get to know a bit more about who I am and what I do!</p>
-          <p>I've been interested in technology and games for my whole life, but got hooked on programming during my Computing
-            A-level. The challenge and creative freedom programming presented was like nothing I'd experienced before, and since then I've known 
-            that it's a programmer's life for me! I went on to study a BSc in Computer Science at Warwick University to give me a firm
-            knowledge of the fundamentals, followed by a Software Development internship at Amazon for some real world experience. I then took on
-            an MSc in Computer Games Technology to help me specialise in games, which has given me skills in Unity, Monogame
-            and OpenGL, as well as knowledge of game design and architecture that will support my future career.
-          </p>                 
-          <p>
-            Now I'm looking for entry level positions as a gameplay programmer, with the goal of working my way up to a 
-            team leader role in future.
-          </p>
-          <p>
-            When I'm not making games I'm often playing them, and have been greatly inspired by the works of 
-            <a href="https://factorio.com/team">Wube software</a>,
-            <a href="https://www.coffeestainstudios.com/">Coffee Stain Studios</a>, and 
-            <a href="https://re-logic.com/">Re-logic</a>, who've made some of my favourite games to-date.
-            I'm a huge fan of the social aspect of cooperative games, and would love to be part of creating
-            a cooperative experience in the future.
-          </p>
-          <p>
-            Other than games, I enjoy long distance running, martial arts, scuba diving and generally experiencing new things.
-            My curiosity has led me to fly planes, gyrocopters, and helicopters, try indoor skydiving, rockclimbing, and surfboarding, 
-            and I recently blacksmithed my own sword! I'm always looking for more activities and experiences to expand my world view.
-          </p>
-        </div>
-      </div> -->
+        <p>
+          Download pdf (<a href="JDTCV.pdf" download="JDTCV.pdf">Click Here</a>)
+          or view in browser below.
+        </p>            
+        <object data="JDTCV.pdf" type="application/pdf" width="100%" height="1000px"> 
+          <p>Your browser does not support in-page pdfs. 
+            <a href="JDTCV.pdf" download="JDTCV.pdf">Click here to download the file instead.</a>
+          </p>  
+        </object>
+      </div>
+      <!-- /.row --> 
+
   </main>
   <!-- /.container -->
 
   <!-- Footer -->
   <footer class="py-2 bg-dark myFooter">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Jacob Taylor 2023 
+      <p class="m-0 text-center text-white">Copyright &copy; Jacob Taylor 2024 
         <a href="https://www.linkedin.com/in/jacob-taylor-3ab064152/"><i class="fa fa-linkedin "></i></a> 
         <a href="mailto:business.jdtaylor@gmail.com"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.youtube.com/@jacobtaylorportfolio3035"><i class="fa fa-youtube"></i></a>
       </p>
     </div>
-    <!-- /.container -->
   </footer>
 
 </body>
