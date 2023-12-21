@@ -17,11 +17,30 @@
   <!-- Font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
   <!-- Custom styles -->
   <link href="css/modern-business.css" rel="stylesheet">
 </head>
 
 <body>
+
+  <!-- Image view modal -->
+  <div class="modal fade" id="viewImg" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modalLabel">View Image</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="imgViewer" class="text-center" style="overflow: scroll;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -169,8 +188,8 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <img src="img/StarCitizen/StructuralSalvageVulture.png" class="img-fluid rounded mt-2" alt="Star Citizen Vulture ship performing Structural Salvage gameplay">
-          <img src="img/StarCitizen/StructuralSalvageVultureOnPlanet.png" class="img-fluid rounded mt-2" alt="Star Citizen Vulture ship performing Structural Salvage gameplay">
+          <img src="img/StarCitizen/StructuralSalvageVulture.png" class="img-fluid rounded mt-2 popupable-image" alt="Vulture ship performing Structural Salvage gameplay">
+          <img src="img/StarCitizen/StructuralSalvageVultureOnPlanet.png" class="img-fluid rounded mt-2 popupable-image" alt="Vulture ship performing Structural Salvage gameplay">
         </div>
 
         <div class="col-md-8">
@@ -210,8 +229,8 @@
           <div class="ratio ratio-16x9 rounded mt-2" style="overflow: hidden;">
             <iframe src="https://www.youtube.com/embed/HkmrXZ2zpFY" title="Voxel Framework for Unity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-          <img src="img/Mycroft/LightingDusk.png" class="img-fluid rounded mt-2" alt="Voxel grass biome">
-          <img src="img/Mycroft/WorldgenSnow.png" class="img-fluid rounded mt-2" alt="Voxel snow biome">
+          <img src="img/Mycroft/LightingDusk.png" class="img-fluid rounded mt-2 popupable-image" alt="Voxel desert biome at dusk">
+          <img src="img/Mycroft/WorldgenSnow.png" class="img-fluid rounded mt-2 popupable-image" alt="Voxel snow biome">
         </div>
 
         <div class="col-md-8">
@@ -261,7 +280,7 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <img src="img/OrbitalGameplay.gif" class="img-fluid rounded mt-2" alt="Voxel snow biome">
+          <img src="img/OrbitalGameplay.gif" class="img-fluid rounded mt-2 popupable-image" alt="Orbital gameplay">
         </div>
 
         <div class="col-md-8">
@@ -280,12 +299,11 @@
           
           <p class="lead mb-1">Key Features</p>
           <ul>
-            <li>Spritesheet animation</li>
+            <li>Detailed unit stats, buffs and upgrades system using Scriptable Objects</li>
+            <li>Self-made spritesheet animation</li>
             <li>Multiple enemy types with varied behaviors</li>
             <li>Predictive targeting</li>
             <li>Full object pooling</li>
-            <li>Detailed upgrade system</li>
-            <li>Self-made sprites</li>
           </ul>
         </div>
       </div>
@@ -298,7 +316,7 @@
           Download pdf (<a href="JDTCV.pdf" download="JDTCV.pdf">Click Here</a>)
           or view in browser below.
         </p>            
-        <object data="JDTCV.pdf" type="application/pdf" width="100%" height="1000px"> 
+        <object data="JDTCV.pdf" type="application/pdf" width="100%" height="1120px"> 
           <p>Your browser does not support in-page pdfs. 
             <a href="JDTCV.pdf" download="JDTCV.pdf">Click here to download the file instead.</a>
           </p>  
@@ -321,5 +339,14 @@
   </footer>
 
 </body>
+
+<!-- Script for image modals -->
+<script>
+  $('.popupable-image').on('click', function(e) {
+    $('#imgViewer').html('').append( $(e.currentTarget).clone().removeClass('img-fluid').removeClass('rounded') );
+    $('#viewImg').modal('show');
+    $('#modalLabel').text($(e.currentTarget).attr('alt'));
+  });
+</script>
 
 </html>
