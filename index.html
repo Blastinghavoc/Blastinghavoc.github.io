@@ -20,6 +20,9 @@
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+  <!-- Panzoom plugin, see also https://www.jqueryscript.net/zoom/jQuery-Plugin-For-Panning-Zooming-Any-Elements-panzoom.html -->
+  <script src="https://cdn.jsdelivr.net/npm/@panzoom/panzoom/dist/panzoom.min.js"></script>
+
   <!-- Custom styles -->
   <link href="css/modern-business.css" rel="stylesheet">
 </head>
@@ -35,7 +38,10 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div id="imgViewer" class="text-center" style="overflow: scroll;">
+          <div id="imgViewer" class="text-center" style="overflow: hidden;">
+            <div id="panzoom">
+              <img src="">
+            </div>
           </div>
         </div>
       </div>
@@ -88,7 +94,7 @@
             <h4 class="card-header bg-dark text-light">Quick Info</h4>
             <div class="card-body bg-secondary">
               <ol class="list-unstyled mb-0 text-light">
-                <li class="mb-1"><b>3+ years c++</b> game-dev at <a href="https://cloudimperiumgames.com/" class="link-light">Cloud Imperium Games</a></li>
+                <li class="mb-1"><b>4+ years c++</b> game-dev at <a href="https://cloudimperiumgames.com/" class="link-light">Cloud Imperium Games</a></li>
                 <li class="mb-1"><b>MSc</b> Computer Games Technology, City University London</li>
                 <li class="mb-1"><b>BSc</b> Computer Science, University of Warwick</li>
               </ol>
@@ -112,7 +118,7 @@
         <div class="col-md-8">
           <p class="lead mb-1">Who am I?</p>
           <p>
-            Hello! I'm Jacob, an experienced gameplay programmer currently working at <a href="https://cloudimperiumgames.com/">Cloud Imperium Games</a>.
+            Hello! I'm Jacob, a Senior Gameplay Programmer currently working at <a href="https://cloudimperiumgames.com/">Cloud Imperium Games</a>.
             I'm passionate about delivering fun and high quality gameplay features to my players and efficient internal workflows to my colleagues.
             At CIG I've had the pleasure of creating new gameplay features, maintaining existing features, and building tools for designers 
             and other developers to use.
@@ -128,7 +134,7 @@
 
           <p>
             Other than games I enjoy singing, working out, martial arts, scuba diving and generally experiencing new things.
-            My curiosity has led me to fly planes, gyrocopters, and helicopters, try indoor skydiving, rockclimbing, and surfboarding, 
+            My curiosity has led me to fly planes, gyrocopters, and helicopters, try indoor skydiving, bouldering, and surfboarding, 
             and even blacksmithing my own sword! I'm always looking for more activities and experiences to expand my world view.
           </p>
 
@@ -169,20 +175,30 @@
           src="https://www.youtube.com/embed/videoseries?si=MymZbxR2QPIV70JH&amp;list=PL39O8jWm_f4t-VPrnnBntaoUCBvbTUPwq" title="Playlist of Jacob's appearances in Star Citizen media" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
           </iframe>
           </div>
+          <img src="img/StarCitizen/MeAtCitCon.png" class="img-fluid rounded mt-2 popupable-image" alt="Me presenting at CitCon 2024">
         </div>
 
         <div class="col-md-8">
           <p>
-            For over three years now I've been working on <a href="https://robertsspaceindustries.com/star-citizen">Star Citizen</a>, a massive scale high fidelity sci-fi
+            For over four years now I've been working on <a href="https://robertsspaceindustries.com/star-citizen">Star Citizen</a>, a massive scale high fidelity sci-fi
             MMO. My work has been a mix of building new gameplay features such as <a href="https://www.youtube.com/watch?v=Xfb_0d1ZpRc" >Loot Generation</a>, 
             <a href="https://www.youtube.com/watch?v=DFSvBqSlt9k">Hull Scraping</a> and <a href="https://www.youtube.com/watch?v=ljdiKYfo2ZI">Structural Salvage</a>,
-            and maintaining and expanding upon existing features such as the Room System and Harvestable System.
+            and maintaining and expanding upon existing features such as the Room System and Harvestable System. 
           </p>
           <p>
-            When building new features I've dealt with the challenges of managing dependencies (VFX, SFX, Art), iterative design and the compromises that sometimes brings
-            (something that sounds good on paper isn't always feasible in a multiplayer persistent MMO!), and the scheduling challenges brought by the need to provide support 
-            for existing features and systems while making new ones. Throughout my work I pride myself in putting the needs of my colleagues first: a new feature
+            Currently I'm working on building the Crafting System which
+            you can watch me present to thousands of our players in our <a href="https://www.youtube.com/watch?v=AmwKD_flLmw">Citizen Con 2024 presentation</a>!
+          </p>
+          <p>
+            When building new features I've dealt with the challenges of managing dependencies (VFX, SFX, Art, UI), iterative design, and the compromises needed to make 
+            things work in a multiplayer persistent MMO. I've also managed the scheduling challenges brought on by the need to provide support 
+            for existing features and systems while simultaneously developing new ones. Throughout my work I pride myself in putting the needs of my colleagues first: a new feature
             is always a collaborative effort so it's vital that I provide excellent tools and documentation to allow designers and other dependencies to use my code to its full potential.
+          </p>
+          <p>
+            I always make time for mentoring more junior developers, making sure people know they can come to me with questions at any time. 
+            When I need to give feedback I feel it's important to carefully explain <em>why</em> I'm suggesting a change rather than just dictating what changes to make, 
+            as this helps my mentees to build their skills and knowledge faster.
           </p>
         </div>
       </div>
@@ -228,7 +244,7 @@
         <div class="col-md-4">
           <div class="ratio ratio-16x9 rounded mt-2" style="overflow: hidden;">
             <iframe src="https://www.youtube.com/embed/HkmrXZ2zpFY" title="Voxel Framework for Unity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+          </div>
           <img src="img/Mycroft/LightingDusk.png" class="img-fluid rounded mt-2 popupable-image" alt="Voxel desert biome at dusk">
           <img src="img/Mycroft/WorldgenSnow.png" class="img-fluid rounded mt-2 popupable-image" alt="Voxel snow biome">
         </div>
@@ -343,10 +359,20 @@
 <!-- Script for image modals -->
 <script>
   $('.popupable-image').on('click', function(e) {
-    $('#imgViewer').html('').append( $(e.currentTarget).clone().removeClass('img-fluid').removeClass('rounded') );
+    var targ = $(e.currentTarget);
+    $('#imgViewer img').attr('src', targ.attr('src')).height(targ.height() * 2).width(targ.width() * 2);// Copy image properties
     $('#viewImg').modal('show');
-    $('#modalLabel').text($(e.currentTarget).attr('alt'));
+    $('#modalLabel').text(targ.attr('alt'));
+    panzoom.reset();
   });
+</script>
+
+<!-- Script for zooming image -->
+<script>
+  const element = document.getElementById('panzoom')
+  const panzoom = Panzoom(element, {});
+  const parent = element.parentElement
+  parent.addEventListener('wheel', panzoom.zoomWithWheel);
 </script>
 
 </html>
